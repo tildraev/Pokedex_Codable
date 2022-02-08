@@ -9,6 +9,7 @@ import Foundation
 
 struct Pokedex: Decodable {
 
+    let next: String
     let results: [PokedexResult]
 }
 

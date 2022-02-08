@@ -12,9 +12,9 @@ class NetworkingController {
     
     private static let baseURLString = "https://pokeapi.co"
     
-    static func fetchPokedex(completion: @escaping (Result<Pokedex, ResultError>) -> Void) {
+    static func fetchPokedex(pokedexURLString: String, completion: @escaping (Result<Pokedex, ResultError>) -> Void) {
         
-        guard let baseURL = URL(string: baseURLString) else {return}
+        guard let baseURL = URL(string: pokedexURLString) else {return}
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         urlComponents?.path = "/api/v2/pokemon/"
 

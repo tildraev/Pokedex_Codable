@@ -20,8 +20,6 @@ class PokedexTableViewCell: UITableViewCell {
             case .success(let pokemon):
                 DispatchQueue.main.async {
                     self.updateImage(pokemon: pokemon)
-                    self.pokemonNameLabel.text = pokemon.name
-                    self.pokemonIDLabel.text = "\(pokemon.id)"
                 }
             case .failure(let error):
                 print(error.errorDescription!)
@@ -36,11 +34,12 @@ class PokedexTableViewCell: UITableViewCell {
             case .success(let pokemonImage):
                 DispatchQueue.main.async {
                     self.pokemonImage.image = pokemonImage
+                    self.pokemonNameLabel.text = pokemon.name
+                    self.pokemonIDLabel.text = "\(pokemon.id)"
                 }
             case .failure(let error):
                 print(error.errorDescription!)
             }
         }
     }
-
 }
