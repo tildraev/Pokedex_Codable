@@ -15,6 +15,8 @@
 		418FA68627B236D400ABEC96 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FA68527B236D400ABEC96 /* Pokemon.swift */; };
 		418FA68C27B2375B00ABEC96 /* NetworkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FA68B27B2375B00ABEC96 /* NetworkingController.swift */; };
 		418FA68E27B237A100ABEC96 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FA68D27B237A100ABEC96 /* PokemonViewController.swift */; };
+		D224D9B527B2DACF00E280BB /* PokedexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D224D9B427B2DACF00E280BB /* PokedexTableViewController.swift */; };
+		D224D9B727B2DC4A00E280BB /* PokedexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D224D9B627B2DC4A00E280BB /* PokedexTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		418FA68527B236D400ABEC96 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		418FA68B27B2375B00ABEC96 /* NetworkingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingController.swift; sourceTree = "<group>"; };
 		418FA68D27B237A100ABEC96 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		D224D9B427B2DACF00E280BB /* PokedexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewController.swift; sourceTree = "<group>"; };
+		D224D9B627B2DC4A00E280BB /* PokedexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				418FA68D27B237A100ABEC96 /* PokemonViewController.swift */,
+				D224D9B427B2DACF00E280BB /* PokedexTableViewController.swift */,
+				D224D9B627B2DC4A00E280BB /* PokedexTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D224D9B527B2DACF00E280BB /* PokedexTableViewController.swift in Sources */,
 				418FA67027B2349C00ABEC96 /* AppDelegate.swift in Sources */,
 				418FA68E27B237A100ABEC96 /* PokemonViewController.swift in Sources */,
 				418FA68C27B2375B00ABEC96 /* NetworkingController.swift in Sources */,
 				418FA67227B2349C00ABEC96 /* SceneDelegate.swift in Sources */,
+				D224D9B727B2DC4A00E280BB /* PokedexTableViewCell.swift in Sources */,
 				418FA68627B236D400ABEC96 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
