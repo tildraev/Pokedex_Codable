@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        NetworkingController.fetchPokemon(with: "https://pokeapi.co/api/v2/pokemon/1") { results in
+//            switch results {
+//                
+//            case .success(_):
+//                print("success")
+//            case .failure(_):
+//                print("failure")
+//            }
+//        }
         return true
     }
 

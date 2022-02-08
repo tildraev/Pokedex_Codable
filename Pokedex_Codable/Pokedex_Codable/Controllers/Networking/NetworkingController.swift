@@ -16,10 +16,12 @@ class NetworkingController {
         
         guard let baseURL = URL(string: baseURLString) else {return}
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-        urlComponents?.path = "/api/v2/pokemon/)"
+        urlComponents?.path = "/api/v2/pokemon/"
 
-        guard let finalURL = urlComponents?.url else {return}
-        print(finalURL)
+        guard let finalURL = urlComponents?.url else {
+            completion(.failure(.invalidURL("\(urlComponents?.url)")))
+            return
+        }
         
         URLSession.shared.dataTask(with: finalURL) { dTaskData, _, error in
             if let error = error {
@@ -41,6 +43,56 @@ class NetworkingController {
         }.resume()
     }
     
+    static func fetchPokemon(with urlString: String, completion: @escaping (Result<Pokemon, ResultError>) -> Void) {
+        guard let pokemonURL = URL(string: urlString) else {
+            completion(.failure(.invalidURL(urlString)))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: pokemonURL) { data, _, error in
+            if let error = error {
+                completion(.failure(.thrownError(error)))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.unableToDecode))
+                return
+            }
+            
+            do {
+                let decodedPokemon = try JSONDecoder().decode(Pokemon.self, from: data)
+                completion(.success(decodedPokemon))
+            } catch {
+                completion(.failure(.thrownError(error)))
+            }
+        }.resume()
+    }
+    
+    static func fetchPokemonImage(with urlString: String, completion: @escaping (Result<UIImage, ResultError>) -> Void) {
+        
+        guard let pokemonImageURL  = URL(string: urlString) else {
+            completion(.failure(.invalidURL(urlString)))
+            return
+        }
+        
+        URLSession.shared.dataTask(with: pokemonImageURL) { data, _, error in
+            if let error = error {
+                completion(.failure(.thrownError(error)))
+                return
+            }
+            
+            guard let pokemonImageData = data else {
+                completion(.failure(.noData))
+                return
+            }
+            
+            if let decodedImage = UIImage(data: pokemonImageData)  {
+                completion(.success(decodedImage))
+            }            
+        }.resume()
+        
+    }
 }
 //    static func fetchImage(for pokemon: Pokemon, completetion: @escaping (UIImage?) -> Void) {
 //        guard let imageURL = URL(string: pokemon.spritePath) else {return}

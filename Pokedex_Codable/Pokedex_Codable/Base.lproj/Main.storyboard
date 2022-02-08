@@ -57,6 +57,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="fU3-Dj-hue" secondAttribute="trailing" constant="20" id="e36-0l-Tlh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pokemonIDLabel" destination="y4p-Rv-BNV" id="ymW-wn-83L"/>
+                                    <outlet property="pokemonImage" destination="J8J-DC-xSQ" id="LCD-g1-U0r"/>
+                                    <outlet property="pokemonNameLabel" destination="kJR-lo-0Ip" id="FPC-37-NNR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
