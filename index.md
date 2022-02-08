@@ -126,7 +126,7 @@ Perfect! Now we have some room to breathe. We need to update our `updateViews(wi
 
 The last item of business on this screen is to update how we access the `name` of the `move` in the `cellForRow(at:)`. I’ll leave this one up to you.
 
-You must be weary, friend. Make a commit and rest here, skeleton.
+You must be weary, friend. Great Job skeleton.
 ![Dark Souls Gif](bonfire.gif)
 ---
 
