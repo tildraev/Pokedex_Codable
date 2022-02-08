@@ -48,6 +48,7 @@ class PokedexTableViewController: UITableViewController {
         
         let lastPokedexIndex = pokedexResults.count - 1
         guard let pokedex = pokedex, let nextURL = URL(string: pokedex.next) else {return}
+        
         if indexPath.row == lastPokedexIndex {
             NetworkingController.fetchPokedex(with: nextURL) { result in
                 switch result {

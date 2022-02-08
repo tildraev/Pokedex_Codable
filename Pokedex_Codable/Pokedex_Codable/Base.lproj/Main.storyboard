@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1139" y="115"/>
         </scene>
         <!--Pokedex Table View Controller-->
         <scene sceneID="GWd-Qp-rHZ">
@@ -164,7 +164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAl-xa-2OB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334.78260869565219" y="114.50892857142857"/>
+            <point key="canvasLocation" x="374" y="115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jWd-gJ-3LK">
@@ -182,7 +182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ho-Ak-x9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575.36231884057975" y="114.50892857142857"/>
+            <point key="canvasLocation" x="-349" y="115"/>
         </scene>
     </scenes>
     <resources>
