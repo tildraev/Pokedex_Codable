@@ -17,6 +17,7 @@
 		418FA68E27B237A100ABEC96 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FA68D27B237A100ABEC96 /* PokemonViewController.swift */; };
 		D224D9B527B2DACF00E280BB /* PokedexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D224D9B427B2DACF00E280BB /* PokedexTableViewController.swift */; };
 		D224D9B727B2DC4A00E280BB /* PokedexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D224D9B627B2DC4A00E280BB /* PokedexTableViewCell.swift */; };
+		D224D9B927B2DFC200E280BB /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D224D9B827B2DFC200E280BB /* ResultError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		418FA68D27B237A100ABEC96 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		D224D9B427B2DACF00E280BB /* PokedexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewController.swift; sourceTree = "<group>"; };
 		D224D9B627B2DC4A00E280BB /* PokedexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexTableViewCell.swift; sourceTree = "<group>"; };
+		D224D9B827B2DFC200E280BB /* ResultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				418FA68B27B2375B00ABEC96 /* NetworkingController.swift */,
+				D224D9B827B2DFC200E280BB /* ResultError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				418FA68E27B237A100ABEC96 /* PokemonViewController.swift in Sources */,
 				418FA68C27B2375B00ABEC96 /* NetworkingController.swift in Sources */,
 				418FA67227B2349C00ABEC96 /* SceneDelegate.swift in Sources */,
+				D224D9B927B2DFC200E280BB /* ResultError.swift in Sources */,
 				D224D9B727B2DC4A00E280BB /* PokedexTableViewCell.swift in Sources */,
 				418FA68627B236D400ABEC96 /* Pokemon.swift in Sources */,
 			);

@@ -15,7 +15,7 @@ struct Pokedex: Decodable {
 struct PokedexResult: Decodable {
     
     let name: String
-    let urlString: String
+    let url: String
 }
 
 
