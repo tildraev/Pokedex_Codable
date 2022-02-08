@@ -25,11 +25,21 @@ struct Pokemon: Decodable {
         case name
         case id
         case spritePath = "sprites"
+        case abilities
     }
     
+    let abilities: [AbilityDetails]
     let name: String
     let id: Int
     let spritePath: PokemonSprite
+}
+
+struct AbilityDetails: Decodable {
+    let ability: Ability
+}
+
+struct Ability: Decodable {
+    let name: String
 }
 
 struct PokemonSprite: Decodable {
