@@ -40,8 +40,7 @@ Build and run the app to discover what your code has been completed for you. Rev
 The goal of our project is to be able to select a `cell` from the `PokedexTableViewControlelr` and navigate to the detail screen we completed a few weeks ago. We will only need to make a few minor changes to the layout of our scenes. 
 
 Navigate to the `Main.storyboard` file. Using the image below as a guide update your scene.
-
-[image:106838B7-65B9-447F-B3EC-08CE4C6308CC-23443-00002E8DB123930A/Screen Shot 2022-02-07 at 11.16.24 PM.png]
+![Completed Storyboard](pokedexComplete.png)
 
 A few items we’d like to highlight:
 1. Notice there is a `UINavigationController`
@@ -128,7 +127,7 @@ Perfect! Now we have some room to breathe. We need to update our `updateViews(wi
 The last item of business on this screen is to update how we access the `name` of the `move` in the `cellForRow(at:)`. I’ll leave this one up to you.
 
 You must be weary, friend. Make a commit and rest here, skeleton.
-[file:CA7D383E-D145-47B7-A5C3-DE7B4F1B09AB-23443-0000310214E90FD0/bonfire.mp4]
+![Dark Souls Gif](bonfire.gif)
 ---
 
 ###  Pagination
